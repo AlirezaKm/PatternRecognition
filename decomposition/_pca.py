@@ -1,4 +1,4 @@
-from .._base import _TransformClass
+from _base import _TransformClass
 import numpy as np
 
 

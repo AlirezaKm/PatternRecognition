@@ -1,4 +1,4 @@
-from .._base import _LearningClass
+from _base import _LearningClass
 import numpy as np
 
 
