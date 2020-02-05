@@ -101,7 +101,7 @@ class KMeans(_LearningClass):
 
         x_data = np.asmatrix(x_data)
         if x_data.shape[0] != self.X.shape[0]:
-            raise ValueError("x_data doesn't have same dimenstion with X "
+            raise ValueError("x_data doesn't have same dimension with X "
                              "{} != {}".format(x_data.shape, self.X.shape))
         result = []
         for sample in range(x_data.shape[1]):
