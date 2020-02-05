@@ -40,6 +40,9 @@ class _LearningClass(_BaseClass):
     def check_is_trained(self):
         assert self._is_trained, 'you should train first'
 
+    def set_trained(self):
+        self._is_trained = True
+
     @abc.abstractmethod
     def predict(self, x_data):
         return

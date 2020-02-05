@@ -93,7 +93,7 @@ class KMeans(_LearningClass):
                 self.best_centers[:, centroid_id] = _center
                 self.center_instances[centroid_id] = _instance
 
-        self._is_trained = True
+        self.set_trained()
         return self
 
     def predict(self, x_data: np.asmatrix):

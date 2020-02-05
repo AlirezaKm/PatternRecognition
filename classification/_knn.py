@@ -89,5 +89,5 @@ class KNearestClassifier(_LearningClass):
         self.classes = np.unique(self.y, axis=0).ravel()
         self.n_classes = len(self.classes)
 
-        self._is_trained = True
+        self.set_trained()
         return self

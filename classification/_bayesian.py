@@ -53,6 +53,9 @@ class MultinomialNB(_LearningClass):
             print('[train]', e)
             exit(-1)
 
+        self.set_trained()
+        return self
+
     def predict(self, x_data: np.asmatrix):
         self.check_is_trained()
 

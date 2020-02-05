@@ -252,7 +252,7 @@ class SVM(_LearningClass):
                 self.intercepts[idx] = B.flatten()
                 self.alphas.append(alpha)
 
-        self._is_trained = True
+        self.set_trained()
         return self
 
     def decision_function(self, x_data: np.asmatrix) -> np.asmatrix:
