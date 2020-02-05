@@ -21,7 +21,11 @@ class LogisticRegression(_LearningClass):
             :param y: n_samples x 1
             :param theta: (n_features + 1) x (number of labels)
             :param multi_class: using multi class (default: 'binary')
-                supported values: ['binary', 'ovo', 'ova']
+                supported values: [
+                'binary' : General method of Classification
+                 'ovo' : One VS One method
+                  'ova' : One VS All method
+                  ]
         """
         super(LogisticRegression, self).__init__(X, y)
 
@@ -40,7 +44,7 @@ class LogisticRegression(_LearningClass):
             theta = np.asmatrix(np.zeros((self.n_features, self.n_labels)))
 
         self.sigmoid_threshold = sigmoid_threshold
-        self.theta = theta
+        self.theta = np.asmatrix(theta)
         self.iterate = iteration
         self.alpha = alpha
         self.cost = np.zeros((self.n_labels, 1))
