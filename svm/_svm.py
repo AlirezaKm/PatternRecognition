@@ -232,8 +232,8 @@ class SVM(_LearningClass):
 
         if self._is_binary:
             self.support_vectors_indexes, self.alphas, \
-            self.support_vectors, self.support_vectors_y, \
-            self.w, self.intercepts = self._train(self.X, self.y)
+                self.support_vectors, self.support_vectors_y, \
+                self.w, self.intercepts = self._train(self.X, self.y)
         else:
             for idx, cls in enumerate(self.classes):
                 # TODO: we need to refactor it
@@ -246,7 +246,7 @@ class SVM(_LearningClass):
                 y_[_mapper['+']], y_[_mapper['-']] = self.LABELS
 
                 support_vectors_indexes, support_vectors_y, \
-                support_vectors, alpha, w, B = self._train(self.X, y_)
+                    support_vectors, alpha, w, B = self._train(self.X, y_)
                 self.support_vectors_indexes.append(support_vectors_indexes)
                 self.support_vectors_y.append(support_vectors_y)
                 self.support_vectors.append(support_vectors)
