@@ -1,6 +1,8 @@
-from _base import _LearningClass
-import numpy as np
 import sys
+
+import numpy as np
+
+from _base import _LearningClass
 
 
 class BatchGradientDescent(_LearningClass):

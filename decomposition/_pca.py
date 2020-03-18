@@ -1,5 +1,6 @@
-from _base import _TransformClass
 import numpy as np
+
+from _base import _TransformClass
 
 
 class PCA(_TransformClass):
@@ -9,9 +10,7 @@ class PCA(_TransformClass):
 
     def __init__(self, X: np.array, n_components: int, method: str = SVD_METHOD):
         """
-        X: m x n
-         n: features
-         m: samples
+        X: n_samples x n_features
 
         n_components:
          number of components

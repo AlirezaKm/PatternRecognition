@@ -1,17 +1,18 @@
-from _base import _LearningClass
 import numpy as np
+
+from _base import _LearningClass
 
 
 class MultinomialNB(_LearningClass):
-
     is_trained: bool
 
     def __init__(self, X: np.array, y: np.array, Laplace: float = 1.0):
-        """Multinomial Naive Bayes
-        Pass parameters like this:
-            X: n x m
-            y: m x 1
-            Laplace: The smoothing prior
+        """
+        Multinomial Naive Bayes
+
+        :param X: n_features x n_samples
+        :param y: n_samples x 1
+        :param Laplace: The smoothing prior
         """
         super(MultinomialNB, self).__init__(X, y, add_new_feature=False)
 

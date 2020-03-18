@@ -1,5 +1,5 @@
-from sys import stderr
 import pickle
+from sys import stderr
 
 
 def store(filename, data):

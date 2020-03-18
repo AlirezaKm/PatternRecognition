@@ -1,5 +1,6 @@
-from . import accuracy, mse, shuffle
 import numpy as np
+
+from . import accuracy, mse, shuffle
 
 
 def train_test_split(

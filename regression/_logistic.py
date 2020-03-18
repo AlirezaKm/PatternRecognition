@@ -1,7 +1,9 @@
-from scipy.optimize import minimize
-from _base import _LearningClass
 import itertools as it
+
 import numpy as np
+from scipy.optimize import minimize
+
+from _base import _LearningClass
 
 
 class LogisticRegression(_LearningClass):
